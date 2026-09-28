@@ -1,0 +1,3 @@
+[submodule "functiongenerator"]
+	path = functiongenerator
+	url = https://github.com/mysticstorm07/few-elp-projects.git
