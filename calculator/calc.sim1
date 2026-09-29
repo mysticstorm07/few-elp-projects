@@ -1,0 +1,43 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-12,-80" rotation="0" hflip="-1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="C:/Users/DELL/AppData/Local/arduino/sketches/0C7F4DCEFA3685AC39778157E9C9CEBC/sketch_apr10a.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Hd44780" CircId="Hd44780-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-4,-120" rotation="0" hflip="1" vflip="1" label="Hd44780-2" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2" Cols="16" />
+
+<item itemtype="Ground" CircId="Ground-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-48,-88" rotation="0" hflip="1" vflip="1" label="Ground-3" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="KeyPad" CircId="KeyPad-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-272,-68" rotation="0" hflip="1" vflip="1" label="KeyPad-4" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="4" Cols="4" Key_Labels="123456789*0#" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Uno-1-12" endpinid="Hd44780-2-PinRS" pointList="-20,40,12,40,12,-112" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Ground-3-Gnd" endpinid="Hd44780-2-PinRW" pointList="-48,-104,20,-104,20,-112" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Hd44780-2-PinEn" endpinid="Uno-1-11" pointList="28,-112,28,32,-20,32" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Hd44780-2-dataPin4" endpinid="Uno-1-5" pointList="68,-112,68,-24,-20,-24" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Hd44780-2-dataPin5" endpinid="Uno-1-4" pointList="76,-112,76,-32,-20,-32" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Hd44780-2-dataPin6" endpinid="Uno-1-3" pointList="84,-112,84,-40,-20,-40" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Hd44780-2-dataPin7" endpinid="Uno-1-2" pointList="92,-112,92,-48,-20,-48" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="KeyPad-4-Pin4" endpinid="Uno-1-10" pointList="-272,4,-272,172,68,172,68,24,-20,24" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="KeyPad-4-Pin5" endpinid="Uno-1-9" pointList="-256,4,-256,164,56,164,56,16,-20,16" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="KeyPad-4-Pin6" endpinid="Uno-1-8" pointList="-240,4,-240,156,40,156,40,8,-20,8" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="KeyPad-4-Pin7" endpinid="Uno-1-7" pointList="-224,4,-224,148,20,148,20,-8,-20,-8" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="KeyPad-4-Pin0" endpinid="Uno-1-A5" pointList="-208,-60,-208,-64,-164,-64" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="KeyPad-4-Pin1" endpinid="Uno-1-A4" pointList="-208,-44,-208,-56,-164,-56" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="KeyPad-4-Pin2" endpinid="Uno-1-A3" pointList="-208,-28,-196,-28,-196,-48,-164,-48" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="KeyPad-4-Pin3" endpinid="Uno-1-A2" pointList="-208,-12,-188,-12,-188,-40,-164,-40" />
+
+</circuit>
